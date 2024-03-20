@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+}
+/* 
+.card-res {
+  width: 18rem;
+}
+
+@media (min-width: 500px) {
+  .card-res {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  
+  .card-img-top {
+    width: 30%; 
+    flex-shrink: 0; 
+    margin-right: 2%; 
+  }
+
+  .card-body {
+    width: 100%; 
+  }
+} */
