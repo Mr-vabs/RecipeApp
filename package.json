@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "homepage": "https://mr-vabs.github.io/RecipesApp",
+  "homepage": "https://mr-vabs.github.io/RecipeApp",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
