@@ -1,6 +1,6 @@
 # RecipesApp 
 
-RecipeApp is a simple React app that allows you to view information about a random recipe. [Click here](htttps://mr-vabs.github.io/RecipeApp) to check!
+RecipeApp is a simple React app that allows you to view information about a random recipe. [Click here](https://mr-vabs.github.io/RecipeApp) to check!
 
 ## Features
 
