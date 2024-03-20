@@ -24,37 +24,42 @@ export default function App() {
     <div className="container-fluid">
       {data && (
         <div>
-          <h1 className="display-1">{data.strMeal}</h1>
-          <div className="flex flex-wrap card card-res">
-            <img
-              className="img-fluid rounded card-img-top"
-              src={data.strMealThumb}
-              alt={data.strMeal}
-              style={{ width: '250px', height: 'auto' }}
-            />
-            <div className="card-body">
-              <p className="lead">{data.strInstructions}</p>
+          <div className="flex flex-wrap card card-res border-info my-2">
+            <h1 className="card-header">{data.strMeal}</h1>
+            <div className="row">
+              <div className="col-lg-auto">
+                <img
+                  className="img-fluid rounded card-img-top p-1"
+                  src={data.strMealThumb}
+                  alt={data.strMeal}
+                  style={{ maxWidth: "480px" }} // Limit image width
+                />
+              </div>
+              <div className="col-lg">
+                <div className="card-body">
+                  <p className="lead">{data.strInstructions}</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><strong>Category</strong> {data.strCategory}</li>
+                    <li class="list-inline-item"><strong>Area</strong> {data.strArea}</li>
+                    <li class="list-inline-item"><strong>Tags</strong> {data.strTags}</li>
+                  </ul> 
+                  <p className="blockquote-footer">
+                    <a href={data.strYoutube}>
+                      <cite title="Source Title">Youtube Link</cite>
+                    </a>
+                  </p>
+                  <p className="blockquote-footer">
+                    <a href={data.strSource}>
+                      <cite title="Source Title">Source Link</cite>
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <ul class="list-inline">
-            <li class="list-inline-item">{data.strCategory}</li>
-            <li class="list-inline-item">{data.strArea}</li>
-            <li class="list-inline-item">{data.strTags}</li>
-          </ul>
-          <p className="blockquote-footer">
-            <a href={data.strYoutube}>
-              <cite title="Source Title">Youtube Link</cite>
-            </a>
-          </p>
-          <p className="blockquote-footer">
-            <a href={data.strSource}>
-              <cite title="Source Title">Source Link</cite>
-            </a>
-          </p>
         </div>
       )}
-      <button className="btn btn-primary" onClick={getMeals}>
+      <button className="btn btn-primary position-absolute position-fixed bottom-0 end-0 rounded-pill" onClick={getMeals}>
         Get Random Recipe
       </button>
     </div>
